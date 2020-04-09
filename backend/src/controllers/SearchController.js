@@ -1,4 +1,3 @@
-const axios = require('axios');
 const Dev = require('../models/Dev');
 const parseStringAsArray = require('../utils/parseStringAsArray');
 
@@ -23,7 +22,7 @@ module.exports = {
       }
     });
 
-    return res.status(200).json(devs);
+    return res.status(200).json({ devs });
   },
 
 }
